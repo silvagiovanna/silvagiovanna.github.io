@@ -4,18 +4,29 @@
         <meta charset="utf-8">
         <title>Project: Blog</title>
     </head>
-     <style>
+        @import url(https://fonts.googleapis.com/css?family=Bitter);
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+<style>
         body {
-            font-family: "Helvetica", sans-serif;
+            font-family: "Arimo", sans-serif;
             font-size: 15px;
         }
 p {
   margin: 10px 30px 15px 50px;
+  text-align: justify;
+  text-justify: inter-word;
+  indent-text: 5em;
 }
+<p> TEXT </p>
 th, td {
   padding: 15px;
   text-align: center;
   border-bottom: 1px solid #ddd; 
+}
+ul {
+  margin: 15px 70px 15px 50px;
+  padding: 50px
+  text-align: center;
 }
 th {
   background-color: #D3EBD4;
@@ -23,8 +34,12 @@ th {
   font-family: Helvetica;
   font-size: bold;
 }
+       table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
         #title {
-            font-family: georgia;
+            font-family: segoe.ui;
             font-size: 2em;
             text-align: center;
             background-color: rgb(78, 119, 122);
@@ -39,12 +54,9 @@ th {
             text-align: center;
             font-size: 22px;
             background-color: rgb(214, 219, 227);
-            font-family: Impact;
+            font-family: "Bitter";
             line-height: 2;
             color: rgb(255, 255, 255);
-        }
-        #table {
-            text-align: center;
         }
         .posttile {
             text-align: right;
@@ -52,6 +64,7 @@ th {
             background-color: rgb(78, 119, 122);
             color: rgb(255, 255, 255);
             line-height: 2;
+          font-family: "Bitter";
         }
         .datapost {
             font-family: tahoma;
@@ -66,8 +79,10 @@ th {
             font-weight: bold;
             line-height: 2;
         }
-        #wishlist{
-        text-align: center;
+        .wishlist{
+        padding: 50px;
+        margin: 50px 50px 8x 10px;
+        background-color: #E9EAD3;
         }
         #ppost {
             text-align: right;
@@ -81,24 +96,28 @@ th {
         margin-left: auto;
         margin-right: auto;
 }
-    </style>
+    tr:hover {background-color: #f5f5f5;}
+    </style>  
     <body>
         
 <!---title--->
+        <img src="cover.png" width="500">
         <h1 id="title"> GIOVANNA: THE JOURNAL</h1>
+
 
 <!---introduction--->
 <p id="pcenter"> Yes, I'm back. I've tried to keep distance from blogs since 2015 (it hunts me until today), but a project is a project. To be honest, I love doing this stuff. <br> Let the blog begin! </p>
+<p></p>
       
        
  <!---Table, Previous posts---> 
    <h3 class="subtitle">PREVIOUS POSTS</h3>
-       <table>
+       <table class="center">
         <thead>
             <tr>
                 <th>TITLE</th>
                 <th>DATE</th>
-                <th>T</th>
+                <th>ABOUT...</th>
             </tr>
         </thead>
         <tbody id="table">
@@ -121,12 +140,15 @@ th {
         </tbody>
     </table>
     
+
        <!---banner, enjoy the ride--->
        <p id="ride"> enjoy the ride! ;)
+         
+
        
       <!---wishlist--->
-       <h3 id="wishlist"> Liste à puce: life's wishlist </h3>
-        <ul>
+       <h3 class="wishlist"> Liste à puce: life's wishlist </h3>
+        <ul class="wishlist">
         <li> Learn German </li>
         <li> Learn Italian </li> 
         <li> Travel to Paris! Oh Là Là</li>
@@ -134,8 +156,7 @@ th {
         <li> And there is always more... </li>
         </ul>
         
-        <!--- let's get into it --->
-        
+        <!--- let's get into it --->   
     <p id="ppost"> Now, let's get into it. Get ready to know me through my posts. :)
     
         <!--- post Well, me! --->
@@ -166,8 +187,3 @@ th {
             As that important dictate says, "<strong>haters are gonna hate!"</strong>, and there's nothing we can do about it. A lot of people say this show is trash and obnoxious but I see only <strong>FUN AND OK.</strong> Why everything got to be problematic? <br> As Detox says (with all wisdom in the world), <em>I've had it!</em> So, shut up everybody and let me enjoy this amazing TV-show. <br> You all should watch, really.<br> Anyway, I'm gonna spend some time with my people: <strong id="TBBTT">Howard, Leonard, Raj, and Sheldon.</strong><br>See you!
         </p>
         <h6 class = "datapost">Posted on 26th july in 2020</h6>
-        
-
-        
-    </body>
-</html>
