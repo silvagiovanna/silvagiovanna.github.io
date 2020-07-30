@@ -7,7 +7,7 @@
         @import url(https://fonts.googleapis.com/css?family=Bitter);
 @import url(https://fonts.googleapis.com/css?family=Arimo);
 <style>
-        body {
+          body {
             font-family: "Arimo", sans-serif;
             font-size: 15px;
         }
@@ -34,6 +34,7 @@ th {
   font-family: Helvetica;
   font-size: bold;
 }
+
        table.center {
     margin-left:auto; 
     margin-right:auto;
@@ -43,50 +44,117 @@ th {
             font-size: 2em;
             text-align: center;
             background-color: rgb(78, 119, 122);
+          padding: 20px;
             color: rgb(255, 255, 255);
-            line-height: 3;
+            line-height: 1;
+          margin-right: -10px;
+          margin-left: -10px;
+          margin-top: -10px;
+          border-bottom: 10px solid rgb(0,0,0);
+          
         }
         #pcenter {
             text-align: center;
             
         }
+#pcenterdiv {
+  margin-right: 80px;
+  margin-left: 80px;
+  background-color: #F2F2F2;
+  padding: 16px;
+  margin-top: 40px;
+  border: 5px dotted #FFFFFF;  
+}
+a {
+  font-weight: bold;
+  background-color: #262626;
+  color: #FFFFFF;
+  text-decoration: none;
+  
+  
+}
+a:hover {
+  text-decoration: underline;
+}
         .subtitle {
+        
             text-align: center;
             font-size: 22px;
-            background-color: rgb(214, 219, 227);
+            background-color: ;
             font-family: "Bitter";
             line-height: 2;
-            color: rgb(255, 255, 255);
+            color: rgb(38,38,38);
+          border-top: 2px solid;
+            margin-left: 300px;
+          margin-right: 300px;
+          margin-top: 40px;
         }
         .posttile {
             text-align: right;
-            font-size: 2em;
+            font-size: 3em;
             background-color: rgb(78, 119, 122);
             color: rgb(255, 255, 255);
             line-height: 2;
-          font-family: "Bitter";
+            font-family: "Bitter";
+            position: absolute;
+            z-index: 3;
+            margin-top: -80px;
+            margin-left: 20px
+          
         }
         .datapost {
-            font-family: tahoma;
-            text-align: right;
+            font-family: Arimo;
+            text-align: center;
+          font-weight: bold;
             background-color: rgb(221, 235, 200);
             line-height: 3;
+         margin-bottom: 100px;
+          border: 2px dotted rgb(38, 38, 38);
+          margin-left: -30px;
+          margin-right: -10px;
+          
+            
         }
-        #ride {
+#ride {
             text-align: center;
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
             font-weight: bold;
             line-height: 2;
+            margin-left: -10px;
+           margin-right: -5px;
+          margin-top: 35px;
+          margin-bottom: 0px;
         }
-        .wishlist{
-        padding: 50px;
-        margin: 50px 50px 8x 10px;
+        #wish {
+        padding-top: 20px;
+         padding-bottom: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
         background-color: #E9EAD3;
+
         }
+#wishlist {
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 3px solid rgb(38, 38, 38);
+  margin-right: 200px;
+  margin-left: 200px;
+  
+  
+}
         #ppost {
-            text-align: right;
+            text-align: center;
             line-height: 2;
+            padding: 0px;
+            margin-top: 20px;
+            margin-bottom: 100px;
+           border-top: 2px solid rgb(38, 38, 38);
+           border-bottom: 2px solid rgb(38,38,38);
+          
+          
+          
+            
         }
         .standart {
             line-height: 1;
@@ -95,23 +163,65 @@ th {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border: 6px double #262626;
 }
-    tr:hover {background-color: #f5f5f5;}
+   
+    .postimage {
+      float: left;
+      margin-right: 30px;
+      margin-left: 90px;
+      margin-bottom: 5px;
+}
+   #roi {
+  background-color: rgb(38,38,38);
+  color: white;
+     position: absolute;
+     font-size: 2em;
+     margin-top: 25px;
+    margin-right: -10px;
+     z-index: 4;
+     margin-left: 350px;
+}
+     #moi {
+       background-color: #CCD9FF;
+       font-family: Arimo;
+       font-size: 12px;
+       position: absolute;
+       z-index: 4;
+       margin-left: 50px;
+       margin-right: 50px;
+       padding: 20px;
+       margin-bottom: 50px;
+       margin-top: -50px;
+       
+     }
+#io {
+  font-size: 3em;
+  position: absolute; 
+  text-align: center;
+  margin-top: -40px;
+  font-family: Bitter;
+  
+  
+}
+   
+ 
     </style>  
     <body>
         
 <!---title--->
-        <img src="cover.png" width="500">
-        <h1 id="title"> GIOVANNA: THE JOURNAL</h1>
-
-
+       <div id="title"> <h1 id="titletxt"> GIOVANNA: THE JOURNAL</h1>
+</div>
+ <h2 id="roi"> REMINDER:</h2>
 <!---introduction--->
-<p id="pcenter"> Yes, I'm back. I've tried to keep distance from blogs since 2015 (it hunts me until today), but a project is a project. To be honest, I love doing this stuff. <br> Let the blog begin! </p>
-<p></p>
+  <div id="pcenterdiv">
+  <p id="pcenter"> Yes, I'm back. I've tried to keep distance from blogs since 2015 (it hunts me until today), but a project is a project. To be honest, I love doing this stuff. <br> Let the blog begin! Click <a href="#me"> here</a> to see the one that writes this present text (me). </p>
+</div>
       
-       
+<h3 class="subtitle">PREVIOUS POSTS</h3>       
  <!---Table, Previous posts---> 
-   <h3 class="subtitle">PREVIOUS POSTS</h3>
+<div id="table">
+   
        <table class="center">
         <thead>
             <tr>
@@ -133,37 +243,48 @@ th {
                 <td>Brand new struggle of mine. </td>
             </tr>
             <tr>
-                <td><a href ="#TBBT">All about Big Bang Theory</a></td>
+                <td><a href ="#TBBTT">All about Big Bang Theory</a></td>
                 <td>1/08/20</td>
                 <td>Love, laugh and PERFECTION.</td>
             </tr>
+           <tr>
+                <td><a href="#study">That study talk...</a></td>
+                <td>02/08/20</td>
+                <td>Let's have it.</td>
+            </tr>
         </tbody>
     </table>
+</div>
     
 
        <!---banner, enjoy the ride--->
+<div id="ride">
        <p id="ride"> enjoy the ride! ;)
+</div>
          
 
        
       <!---wishlist--->
-       <h3 class="wishlist"> Liste à puce: life's wishlist </h3>
-        <ul class="wishlist">
+         <div id="wish">
+       <h3 id="wishlist"> Liste à puce: life's wishlist </h3>
+        <ul>
         <li> Learn German </li>
         <li> Learn Italian </li> 
         <li> Travel to Paris! Oh Là Là</li>
         <li> Graduate, of couse</li>
         <li> And there is always more... </li>
         </ul>
+</div>
         
         <!--- let's get into it --->   
     <p id="ppost"> Now, let's get into it. Get ready to know me through my posts. :)
-    
+
         <!--- post Well, me! --->
-        <h2 class = "posttile"><strong id="wellme">Well, me!</strong></h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Pink_knitting_in_front_of_pink_sweatshirt.JPG" width = "261" class="center">
+        <div id="post1">
+      <h2 class = "posttile"><strong id="wellme">Well, me!</strong></h2>
+        <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/17599/production/_107514659_knitting.jpg" width ="300" class="postimage">
         <p class="standart">Hello! <br>I'm Giovanna. 16 years and aries is my sign in case you need to know (sorry for that). I'm christian, and that's an important thing in my life, once its principles -- as love, faith, heaven's life and etc. -- are  my whole life guidings. I go to church twice in a week. <br>
-        Besides that, I love learn new thing. Looooo-o-o-ve. This vacation, I've learned the main theme of my next post: programming. No spoilers! <a href="#TBBTT">(click here to see)</a> <br> 
+        Besides that, I love learn new things. Looooo-o-o-ve. This vacation, I've learned the main theme of my next post: programming. No spoilers! <a href="#programming">(click here to see)</a> <br> 
         Well, I think that a list could serve us very well.
         <ul> 
             <li><strong>Blogging:</strong> since 2010, I've made a thousand blogs and I've learned s much! Styling, writing, how to put images and fix errors inside the code. That was the zero step.</li>
@@ -173,17 +294,37 @@ th {
         </ul>
         </p>
         <h6 class = "datapost">Posted on 26th july in 2020</h6>
+</div> 
         
         <!--- post Programming ---> 
+<div id="post2">
         <h2 class = "posttile"><strong id="programming">Programming (?)</strong></h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/C_Hello_World_Program.png/402px-C_Hello_World_Program.png" width="227" class="center">
-        <p>Something excited happened.</p>
+        <img src="https://miro.medium.com/max/12032/0*DypQzAMdE9cudggX" width="300" class="postimage">
+        <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
         <h6 class = "datapost">Posted on 30th july in 2020</h6>
-        
+</div>
         <!--- post TBBT --->
-        <h2 class = "posttile"><strong id="TBBT">All about The Big Bang Theory</strong></h2>
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/The_Big_Bang_Theory_%28Official_Title_Card%29.png" width="500">
-        <p>This show have been my whole entertainment since 2019. I discovered this and loved it! It's so intelligent and stupid at the same time, giving <em>that</em> momento to sit, relax and laugh. <br>
-            As that important dictate says, "<strong>haters are gonna hate!"</strong>, and there's nothing we can do about it. A lot of people say this show is trash and obnoxious but I see only <strong>FUN AND OK.</strong> Why everything got to be problematic? <br> As Detox says (with all wisdom in the world), <em>I've had it!</em> So, shut up everybody and let me enjoy this amazing TV-show. <br> You all should watch, really.<br> Anyway, I'm gonna spend some time with my people: <strong id="TBBTT">Howard, Leonard, Raj, and Sheldon.</strong><br>See you!
+<div id="post3">
+        <h2 class = "posttile"><strong id="TBBTT">All about The Big Bang Theory</strong></h2>
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/The_Big_Bang_Theory_%28Official_Title_Card%29.png" width="400"class="postimage" >
+        <p><br>This show have been my whole entertainment since 2019. I discovered this and loved it! It's so intelligent and stupid at the same time, giving <em>that</em> momento to sit, relax and laugh. <br>
+            As that important dictate says, "<strong>haters are gonna hate!"</strong>, and there's nothing we can do about it. A lot of people say this show is trash and obnoxious but I see only <strong>FUN AND OK.</strong> Why everything got to be problematic? <br> As Detox says (with all wisdom in the world), <em>I've had it!</em> So, shut up everybody and let me enjoy this amazing TV-show. <br> You all should watch, really.<br> Anyway, I'm gonna spend some time with my people: <strong id="">Howard, Leonard, Raj, and Sheldon.</strong><br>See you!
         </p>
         <h6 class = "datapost">Posted on 26th july in 2020</h6>
+</div>
+
+<!--- post 4 --->
+<div id="post4"> 
+  <h2 class = "posttile"><strong id="study">That study talk...</strong></h2>
+        <img src="https://clueylearning.com.au/wp-content/uploads/2019/08/most-effective-way-to-study-according-to-science.jpg" width="400"class="postimage" >
+        <p><br>This show have been my whole entertainment since 2019. I discovered this and loved it! It's so intelligent and stupid at the same time, giving <em>that</em> momento to sit, relax and laugh. <br>
+            As that important dictate says, "<strong>haters are gonna hate!"</strong>, and there's nothing we can do about it. A lot of people say this show is trash and obnoxious but I see only <strong>FUN AND OK.</strong> Why everything got to be problematic? <br> As Detox says (with all wisdom in the world), <em>I've had it!</em> So, shut up everybody and let me enjoy this amazing TV-show. <br> You all should watch, really.<br> Anyway, I'm gonna spend some time with my people: <strong >Howard, Leonard, Raj, and Sheldon.</strong><br>See you!"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        </p>
+        <h6 class = "datapost">Posted on 2nd august in 2020</h6>
+</div>
+<div id="moi"> 
+  <h3 id="io"> <strong id="me">Me, moi, io: </strong> <h3> 
+  <p> I'm a 16 year-old teenage. That's all. 
+  I live in Brazil, São Paulo. I do love my city, and my future only God knows. This blog express 100% my opinion and if you want to be represented, create your own blog. Just kidding: read it in a nice tone, 'cause I'm a nice person. ;) Well, at least I try to... <br>
+  Bisous!, Giovanna. </p>
+</div>
